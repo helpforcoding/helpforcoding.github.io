@@ -1,2 +1,1 @@
-# helpforcoding.github.io
-unblocker for games
+# IF YOU USE THIS IRRESPONSIBLY THEN ITS NOT MY FAULT.
