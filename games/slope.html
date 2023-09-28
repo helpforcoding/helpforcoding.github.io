@@ -1,72 +1,64 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Forest basins</title>
-<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
-</head>
-<body>
-<div id="webgl"></div>
-
-<div style="position:absolute;top:0px;left:0px;"><img src="legend.png"></div>
-
-<!-- popup -->
-<div id="popup" style="display:none;">
-<div id="closebtn">&times;</div>
-<div id="popupbar"></div>
-<div id="popupbody">
- <div id="popupcontent"></div>
- <div id="pageinfo">
-  <h1>Current View URL</h1>
-  <div><input id="urlbox" type="text"></div>
-
-  <h1>Usage</h1>
-  <div id="usage"></div>
-
-  <h1>About</h1>
-  <div id="about">This page was made with <a href="http://www.qgis.org/" target="_blank">QGIS</a> and <a href="https://github.com/minorua/Qgis2threejs" target="_blank">Qgis2threejs</a> plugin, 
-and uses the following library:
-  <ul>
-  <li>three.js <a href="http://threejs.org/" target="_blank">http://threejs.org/</a> <a href="./threejs/LICENSE" target="_blank" class="license">(LICENSE)</a></li>
-  <li>dat-gui <a href="https://code.google.com/p/dat-gui/" target="_blank">https://code.google.com/p/dat-gui/</a> <a href="./dat-gui/license.txt" target="_blank" class="license">(LICENSE)</a></li>
-  <li id="lib_proj4js" style="display: none;">Proj4js <a href="http://trac.osgeo.org/proj4js/" target="_blank">http://trac.osgeo.org/proj4js/</a> <a href="./proj4js/LICENSE.md" target="_blank" class="license">(LICENSE)</a></li>
-  </ul>
-  </div>
- </div>
-</div></div>
-
-<!-- footer -->
-<div id="footer"></div>
-
-<script src="./threejs/three.min.js"></script>
-<script src="./Qgis2threejs.js"></script>
-<script src="./threejs/OrbitControls.js"></script>
 <script>
-var option = Q3D.Options;
-
+    if (window.parent !== window.self) window.parent.postMessage("bonk", "*");
+    window.addEventListener("DOMContentLoaded", function () {
+        document.body.style.margin = "0";
+        document.body.style.height = "100vh";
+        document.body.style.overflow = "hidden";
+    });
 </script>
-<script src="./slope.js"></script>
+<html lang="en-us">
+    <head>
+        
+
+  <title>Help For Coding</title>
+  <meta name="description" content="Help for Coding Website.">
+        
+        <link href="style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="TemplateData56/style.css" />
+        <script src="TemplateData56/UnityProgress.js"></script>
+        <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+        <script src="Build/UnityLoader.js"></script>
+        <script async src="https://arc.io/widget.min.js#6gfVUQx1"></script>
+        <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "74231a7994394f36b20d083f82e823f8"}'></script><!-- End Cloudflare Web Analytics -->
+        <script>
+          
+            var gameInstance = UnityLoader.instantiate("gameContainer", "Build/slope_27Sept.json", {
+                onProgress: UnityProgress,
+                Module: {
+                    onRuntimeInitialized: function () {
+                        UnityProgress(gameInstance, "complete");
+                    },
+                },
+            });
+        </script>
+       <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5JW8H48BX"></script>
 <script>
-if (typeof proj4 !== "undefined") document.getElementById("lib_proj4js").style.display = "list-item";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-var container = document.getElementById("webgl");
-// initialize application
-var app = Q3D.application;
-app.init(container);
-
-// load the project
-app.loadProject(project);
-
-app.addEventListeners();
-app.start();
-
+  gtag('config', 'G-W5JW8H48BX');
 </script>
-<script src="./dat-gui/dat.gui.min.js"></script>
-<script src="./dat-gui_panel.js"></script>
-<script>
-// initialize dat-gui panel
-Q3D.gui.init();
-</script>
-</body>
+        <script src="shared/lib.js" type="text/javascript"></script>
+        <script src="shared/gamebreak/gamebreak.js" type="text/javascript"></script>
+        <script type='text/javascript' src='//pl19194153.highrevenuegate.com/8d/25/bf/8d25bf764816e3ec965ca0a1e5a48999.js'></script>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7257238324060789"
+     crossorigin="anonymous"></script>
+     <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet">
+                
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div class="webgl-content">
+            <div id="gameContainer" style="width: 100vw; height: 100vh;"></div>
+        </div>
+        <!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7961039&style=0001&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                                    
+
+    </body>
+                    
 </html>
